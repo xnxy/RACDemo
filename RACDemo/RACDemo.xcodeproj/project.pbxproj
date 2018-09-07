@@ -15,6 +15,10 @@
 		A0176B4721414FDD00BD3FD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0176B4621414FDD00BD3FD3 /* main.m */; };
 		A0176B5121414FDD00BD3FD3 /* RACDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0176B5021414FDD00BD3FD3 /* RACDemoTests.m */; };
 		A0176B5C21414FDD00BD3FD3 /* RACDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0176B5B21414FDD00BD3FD3 /* RACDemoUITests.m */; };
+		A01C67B62142121900721776 /* SignalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C67B42142121900721776 /* SignalViewController.m */; };
+		A01C67B72142121900721776 /* SignalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01C67B52142121900721776 /* SignalViewController.xib */; };
+		A01C67BB214249DA00721776 /* RACSchedulerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C67B9214249DA00721776 /* RACSchedulerViewController.m */; };
+		A01C67BC214249DA00721776 /* RACSchedulerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01C67BA214249DA00721776 /* RACSchedulerViewController.xib */; };
 		F73BC47DEF884AC62FC2B21C /* Pods_RACDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6014547C21C567740A10DF28 /* Pods_RACDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +60,12 @@
 		A0176B5B21414FDD00BD3FD3 /* RACDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACDemoUITests.m; sourceTree = "<group>"; };
 		A0176B5D21414FDD00BD3FD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0176B69214152A400BD3FD3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A01C67B32142121900721776 /* SignalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignalViewController.h; sourceTree = "<group>"; };
+		A01C67B42142121900721776 /* SignalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignalViewController.m; sourceTree = "<group>"; };
+		A01C67B52142121900721776 /* SignalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignalViewController.xib; sourceTree = "<group>"; };
+		A01C67B8214249DA00721776 /* RACSchedulerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACSchedulerViewController.h; sourceTree = "<group>"; };
+		A01C67B9214249DA00721776 /* RACSchedulerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACSchedulerViewController.m; sourceTree = "<group>"; };
+		A01C67BA214249DA00721776 /* RACSchedulerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RACSchedulerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +131,7 @@
 				A0176B3821414FDC00BD3FD3 /* AppDelegate.m */,
 				A0176B3A21414FDC00BD3FD3 /* ViewController.h */,
 				A0176B3B21414FDC00BD3FD3 /* ViewController.m */,
+				A01C67AC21420D7D00721776 /* RAC */,
 				A0176B3D21414FDC00BD3FD3 /* Main.storyboard */,
 				A0176B4021414FDD00BD3FD3 /* Assets.xcassets */,
 				A0176B4221414FDD00BD3FD3 /* LaunchScreen.storyboard */,
@@ -147,6 +158,19 @@
 				A0176B5D21414FDD00BD3FD3 /* Info.plist */,
 			);
 			path = RACDemoUITests;
+			sourceTree = "<group>";
+		};
+		A01C67AC21420D7D00721776 /* RAC */ = {
+			isa = PBXGroup;
+			children = (
+				A01C67B32142121900721776 /* SignalViewController.h */,
+				A01C67B42142121900721776 /* SignalViewController.m */,
+				A01C67B52142121900721776 /* SignalViewController.xib */,
+				A01C67B8214249DA00721776 /* RACSchedulerViewController.h */,
+				A01C67B9214249DA00721776 /* RACSchedulerViewController.m */,
+				A01C67BA214249DA00721776 /* RACSchedulerViewController.xib */,
+			);
+			path = RAC;
 			sourceTree = "<group>";
 		};
 		D894BABB0293A6FE7736B579 /* Pods */ = {
@@ -265,7 +289,9 @@
 			files = (
 				A0176B4421414FDD00BD3FD3 /* LaunchScreen.storyboard in Resources */,
 				A0176B4121414FDD00BD3FD3 /* Assets.xcassets in Resources */,
+				A01C67B72142121900721776 /* SignalViewController.xib in Resources */,
 				A0176B3F21414FDC00BD3FD3 /* Main.storyboard in Resources */,
+				A01C67BC214249DA00721776 /* RACSchedulerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +357,9 @@
 			files = (
 				A0176B3C21414FDC00BD3FD3 /* ViewController.m in Sources */,
 				A0176B4721414FDD00BD3FD3 /* main.m in Sources */,
+				A01C67B62142121900721776 /* SignalViewController.m in Sources */,
 				A0176B3921414FDC00BD3FD3 /* AppDelegate.m in Sources */,
+				A01C67BB214249DA00721776 /* RACSchedulerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +532,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/RACDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = RACDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -511,6 +540,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yryc.RACDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				WARNING_CFLAGS = (
+					"-Wno-strict-prototypes",
+					"-Wno-deprecated-declarations",
+				);
 			};
 			name = Debug;
 		};
@@ -522,6 +556,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/RACDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = RACDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -529,6 +564,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yryc.RACDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				WARNING_CFLAGS = (
+					"-Wno-strict-prototypes",
+					"-Wno-deprecated-declarations",
+				);
 			};
 			name = Release;
 		};
