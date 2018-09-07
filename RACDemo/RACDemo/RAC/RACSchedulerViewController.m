@@ -36,6 +36,26 @@
         }
     }] deliverOn:[RACScheduler mainThreadScheduler]];
 }
+/*
+ 这段代码会在后台线程立即发起一个请求，然后传递到主线程上更新UI
+ 
+ 发起请求: + (RACSignal *)startEagerlyWithScheduler:(RACScheduler *)scheduler block:(void (^)(id<RACSubscriber> subscriber))block;
+ 信号传递: - (RACSignal *)deliverOn:(RACScheduler *)scheduler
+ 方法介绍
+ + (RACScheduler *)mainThreadScheduler;
+ 主线程调度
+ 
+ + (RACScheduler *)currentScheduler;
+ 当前队列调度
+ 
+ + (RACScheduler *)scheduler;
+ 这方法相当于执行了[RACScheduler schedulerWithPriority:RACSchedulerPriorityDefault];
+ 
+ + (RACScheduler *)schedulerWithPriority:(RACSchedulerPriority)priority;
+ 指定等级的异步并发队列，这个其实调用的是
+ 
+ [[RACTargetQueueScheduler alloc] initWithName:name targetQueue:dispatch_get_global_queue(priority, 0)];
+ */
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
