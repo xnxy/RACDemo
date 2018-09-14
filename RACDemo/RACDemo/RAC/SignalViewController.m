@@ -22,11 +22,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    @weakify(self)
-    [[self.userNameTextField rac_textSignal] subscribeNext:^(NSString * _Nullable x) {
-        @strongify(self);
-        self.name = x;
-    }];
+//    @weakify(self)
+//    [[self.userNameTextField rac_textSignal] subscribeNext:^(NSString * _Nullable x) {
+//        @strongify(self);
+//        self.name = x;
+//    }];
   
     //绑定
 //    RAC(self, name) = [self.userNameTextField rac_textSignal];
@@ -34,7 +34,7 @@
 //        NSLog(@"----绑定---：%@----",x);
 //    }];
     
-//    [self map];
+    [self signal];
 }
 
 //创建信号  订阅信息

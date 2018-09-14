@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupTableView];
-    self.dataAry = [NSMutableArray arrayWithObjects:@"SignalViewController",@"RACSchedulerViewController", nil];
+    self.dataAry = [NSMutableArray arrayWithObjects:@"SignalViewController",@"RACSchedulerViewController",@"HotAndColdViewController", nil];
 }
 
 - (void)setupTableView{

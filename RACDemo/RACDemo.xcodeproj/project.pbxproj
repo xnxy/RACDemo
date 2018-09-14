@@ -19,6 +19,7 @@
 		A01C67B72142121900721776 /* SignalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01C67B52142121900721776 /* SignalViewController.xib */; };
 		A01C67BB214249DA00721776 /* RACSchedulerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C67B9214249DA00721776 /* RACSchedulerViewController.m */; };
 		A01C67BC214249DA00721776 /* RACSchedulerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01C67BA214249DA00721776 /* RACSchedulerViewController.xib */; };
+		A01C67BF214251E000721776 /* HotAndColdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C67BE214251E000721776 /* HotAndColdViewController.m */; };
 		F73BC47DEF884AC62FC2B21C /* Pods_RACDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6014547C21C567740A10DF28 /* Pods_RACDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,8 @@
 		A01C67B8214249DA00721776 /* RACSchedulerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACSchedulerViewController.h; sourceTree = "<group>"; };
 		A01C67B9214249DA00721776 /* RACSchedulerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACSchedulerViewController.m; sourceTree = "<group>"; };
 		A01C67BA214249DA00721776 /* RACSchedulerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RACSchedulerViewController.xib; sourceTree = "<group>"; };
+		A01C67BD214251E000721776 /* HotAndColdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotAndColdViewController.h; sourceTree = "<group>"; };
+		A01C67BE214251E000721776 /* HotAndColdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotAndColdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +172,8 @@
 				A01C67B8214249DA00721776 /* RACSchedulerViewController.h */,
 				A01C67B9214249DA00721776 /* RACSchedulerViewController.m */,
 				A01C67BA214249DA00721776 /* RACSchedulerViewController.xib */,
+				A01C67BD214251E000721776 /* HotAndColdViewController.h */,
+				A01C67BE214251E000721776 /* HotAndColdViewController.m */,
 			);
 			path = RAC;
 			sourceTree = "<group>";
@@ -357,6 +362,7 @@
 			files = (
 				A0176B3C21414FDC00BD3FD3 /* ViewController.m in Sources */,
 				A0176B4721414FDD00BD3FD3 /* main.m in Sources */,
+				A01C67BF214251E000721776 /* HotAndColdViewController.m in Sources */,
 				A01C67B62142121900721776 /* SignalViewController.m in Sources */,
 				A0176B3921414FDC00BD3FD3 /* AppDelegate.m in Sources */,
 				A01C67BB214249DA00721776 /* RACSchedulerViewController.m in Sources */,
